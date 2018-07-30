@@ -44,7 +44,7 @@ $button-height: 20px;
         /* TODO, these are style notes */
         margin-top: -1px;
         border-top: 1px solid $border-color;
-
+        
       }
 
     }
@@ -63,6 +63,8 @@ $button-height: 20px;
       @include transition(opacity, 0.1s, linear);
       border: 0;
 
+      visibility: hidden;
+      
       line-height: $button-height - 1;
       height: $button-height;
 

@@ -1,14 +1,12 @@
-$background-color: #1a1a1a;
-
+$background-color: #ececec;
 $hover-lighten: 5%;
 $border-lighten: 7%;
 $active-lighten: 10%;
-
-$number-color: #2FA1D6;
+$number-color: #2fa1d6;
 $boolean-color: #806787;
-$string-color: #1ed36f;
+$string-color: #000000;
 $function-color: #e61d5f;
-$save-row-color: #dad5cb;
+$save-row-color: #ececec;
 $button-color: darken($save-row-color, 10%);
 $border-color: lighten($background-color, $border-lighten);
 $input-color: lighten($background-color, 8.5%);
@@ -34,8 +32,8 @@ $input-color: lighten($background-color, 8.5%);
   line-height: 7px;
   padding: 4px 4px 5px 4px;
   background: $button-color;
-  color: #fff;
-  text-shadow: 0 1px 0 darken($button-color, 10%);
+  color: #000;
+  // text-shadow: 0 1px 0 darken($button-color, 10%);
   box-shadow: 0 -1px 0 darken($button-color, 10%);
   cursor: pointer;
 }
@@ -51,9 +49,9 @@ $input-color: lighten($background-color, 8.5%);
 /** Main type */
 .dg {
 
-  color: #eee;
+  color: #000000;
   font: 11px 'Lucida Grande', sans-serif;
-  text-shadow: 0 -1px 0 #111;
+  // text-shadow: 0 -1px 0 #111;
 
   /** Auto place */
   &.main {
@@ -116,7 +114,7 @@ $input-color: lighten($background-color, 8.5%);
 
     &.title {
       padding-left: 16px;
-      background: #000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;
+      background: #dcdcdc url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;
       cursor: pointer;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
@@ -131,26 +129,26 @@ $input-color: lighten($background-color, 8.5%);
   .cr {
 
     &.boolean {
-      border-left: 3px solid $boolean-color;
+      border-left: 3px solid #ececec;
     }
 
     &.color {
-      border-left: 3px solid;
+      border-left: 3px solid #ececec;
     }
 
     &.function {
-      border-left: 3px solid $function-color;
+      border-left: 3px solid #ececec;
     }
 
     &.number {
-      border-left: 3px solid $number-color;
+      border-left: 3px solid #ececec;
       input[type=text] {
         color: $number-color;
       }
     }
 
     &.string {
-      border-left: 3px solid $string-color;
+      border-left: 3px solid #ececec;
       input[type=text] {
         color: $string-color;
       }
@@ -158,7 +156,7 @@ $input-color: lighten($background-color, 8.5%);
 
     &.function:hover,
     &.boolean:hover {
-      background: #111;
+      background: #dcdcdc;
     }
 
   }
